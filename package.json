@@ -1,0 +1,17 @@
+{
+  "name": "coffe_bar",
+  "version": "1.0.0",
+  "description": "Высоконагруженное full-stack веб-приложение для автоматизации заказов и управления внутренней логистикой городской кофейни. Проект спроектирован с упором на распределение вычислений между сервером приложений и реляционной СУБД, безопасность персональных данных и высокую производительность фронтенда.",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

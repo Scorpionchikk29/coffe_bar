@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+
+*.md
+
+# Исключаем сгенерированный клиент Prisma, чтобы не ломать внутренние типы СУБД
+server/src/generated/
+
+# Исключаем файлы баз данных и чертежей
+database/
+*.sql
+*.drawio

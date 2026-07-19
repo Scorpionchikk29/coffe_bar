@@ -1,0 +1,18 @@
+# Зависимости
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Сборка
+dist/
+client/dist/
+server/dist/
+
+# Конфиденциальные данные
+.env
+server/.env
+
+# Логи и системные файлы
+*.log
+.DS_Store
+.vscode/
